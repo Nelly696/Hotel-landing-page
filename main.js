@@ -1,70 +1,90 @@
-const menuBtn = document.getElementById("menu-btn");
-const navLinks = document.getElementById("nav-links");
-const menuBtnIcon = menuBtn.querySelector("i");
+// Get references to HTML elements
+const menuBtn = document.getElementById("menu-btn"); // Get the menu button element
+const navLinks = document.getElementById("nav-links"); // Get the navigation links element
+const menuBtnIcon = menuBtn.querySelector("i"); // Get the icon element inside the menu button
 
+// Add event listener to menu button
 menuBtn.addEventListener("click", () => {
+  // Toggle the "open" class on the navigation links element
   navLinks.classList.toggle("open");
 
+  // Check if the navigation links element has the "open" class
   const isOpen = navLinks.classList.contains("open");
+
+  // Update the menu button icon based on the state of the navigation links
   menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
 });
 
+// Add event listener to navigation links
 navLinks.addEventListener("click", () => {
+  // Remove the "open" class from the navigation links element
   navLinks.classList.remove("open");
+
+  // Reset the menu button icon to the default state
   menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
 
+// Define options for ScrollReveal animations
 const scrollRevealOption = {
-  distance: "50px",
-  origin: "bottom",
-  duration: 1000,
+  distance: "50px", // Distance from the viewport to trigger the animation
+  origin: "bottom", // Direction of the animation (from bottom to top)
+  duration: 1000, // Duration of the animation in milliseconds
 };
 
-// header container
+// Header container animations
 ScrollReveal().reveal(".header__container p", {
-  ...scrollRevealOption,
+  // Animate paragraph elements
+  ...scrollRevealOption, // Use the default animation options
 });
 
 ScrollReveal().reveal(".header__container h1", {
-  ...scrollRevealOption,
-  delay: 500,
+  // Animate h1 elements
+  ...scrollRevealOption, // Use the default animation options
+  delay: 500, // Add a 500ms delay to the animation
 });
 
-// about container
+// About container animations
 ScrollReveal().reveal(".about__image img", {
-  ...scrollRevealOption,
-  origin: "left",
+  // Animate image elements
+  ...scrollRevealOption, // Use the default animation options
+  origin: "left", // Change the animation direction to from left to right
 });
 
 ScrollReveal().reveal(".about__content .section__subheader", {
-  ...scrollRevealOption,
-  delay: 500,
+  // Animate subheader elements
+  ...scrollRevealOption, // Use the default animation options
+  delay: 500, // Add a 500ms delay to the animation
 });
 
 ScrollReveal().reveal(".about__content .section__header", {
-  ...scrollRevealOption,
-  delay: 1000,
+  // Animate header elements
+  ...scrollRevealOption, // Use the default animation options
+  delay: 1000, // Add a 1000ms delay to the animation
 });
 
 ScrollReveal().reveal(".about__content .section__description", {
-  ...scrollRevealOption,
-  delay: 1500,
+  // Animate description elements
+  ...scrollRevealOption, // Use the default animation options
+  delay: 1500, // Add a 1500ms delay to the animation
 });
 
 ScrollReveal().reveal(".about__btn", {
-  ...scrollRevealOption,
-  delay: 2000,
+  // Animate button elements
+  ...scrollRevealOption, // Use the default animation options
+  delay: 2000, // Add a 2000ms delay to the animation
 });
 
-// room container
+// Room container animations
 ScrollReveal().reveal(".room__card", {
-  ...scrollRevealOption,
-  interval: 500,
+  // Animate card elements
+  ...scrollRevealOption, // Use the default animation options
+  interval: 500, // Add a 500ms interval between animations
 });
 
-// service container
+// Service container animations
 ScrollReveal().reveal(".service__list li", {
-  ...scrollRevealOption,
-  interval: 500,
-  origin: "right",
+  // Animate list item elements
+  ...scrollRevealOption, // Use the default animation options
+  interval: 500, // Add a 500ms interval between animations
+  origin: "right", // Change the animation direction to from right to left
 });

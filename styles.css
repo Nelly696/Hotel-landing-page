@@ -1,26 +1,37 @@
+/* Import Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+/* Define global variables */
 :root {
+  /* Primary color */
   --primary-color: #e82574;
+  /* Primary color dark */
   --primary-color-dark: #bc1c5c;
+  /* Text dark */
   --text-dark: #0c0a09;
+  /* Text light */
   --text-light: #78716c;
+  /* White */
   --white: #ffffff;
+  /* Maximum width */
   --max-width: 1200px;
 }
 
+/* Reset CSS */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Section container styles */
 .section__container {
   max-width: var(--max-width);
   margin: auto;
   padding: 5rem 1rem;
 }
 
+/* Section subheader styles */
 .section__subheader {
   margin-bottom: 0.5rem;
   position: relative;
@@ -29,6 +40,7 @@
   color: var(--text-dark);
 }
 
+/* Section subheader after pseudo-element styles */
 .section__subheader::after {
   position: absolute;
   content: "";
@@ -39,6 +51,7 @@
   background-color: var(--primary-color);
 }
 
+/* Section header styles */
 .section__header {
   max-width: 600px;
   margin-bottom: 1rem;
@@ -48,12 +61,14 @@
   color: var(--text-dark);
 }
 
+/* Section description styles */
 .section__description {
   max-width: 600px;
   margin-bottom: 1rem;
   color: var(--text-light);
 }
 
+/* button styles */
 .btn {
   padding: 0.75rem 1.5rem;
   outline: none;
@@ -144,6 +159,7 @@ nav {
   transform: translateY(0);
 }
 
+/* Nav links styles */
 .nav__links a {
   position: relative;
   isolation: isolate;
@@ -160,6 +176,7 @@ nav {
   padding-block: 10rem 15rem;
 }
 
+/* Header container paragraph styles */
 .header__container p {
   margin-bottom: 1rem;
   font-size: 1.2rem;
@@ -168,6 +185,7 @@ nav {
   opacity: 0.6;
 }
 
+/* Header container h1 styles */
 .header__container h1 {
   font-size: 4rem;
   font-weight: 500;
@@ -176,6 +194,7 @@ nav {
   text-align: center;
 }
 
+/* Header container h1 > span styles */
 .header__container h1 span {
   color: var(--primary-color);
 }
@@ -422,9 +441,7 @@ nav {
   padding-block: 3rem;
   display: grid;
   grid-template-columns:
-    minmax(1rem, 1fr)
-    minmax(0, var(--max-width))
-    minmax(1rem, 1fr);
+    minmax(1rem, 1fr) minmax(0, var(--max-width)) minmax(1rem, 1fr);
   background-image: url("assets/explore.jpg");
   background-position: center center;
   background-size: cover;

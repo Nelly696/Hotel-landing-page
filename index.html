@@ -1,18 +1,27 @@
+<!-- Document type declaration -->
 <!DOCTYPE html>
 <html lang="en">
+    <!-- Head section -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to external stylesheet loading (Remixicon) font -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+       <!-- Link to internal stylesheet (styles.css) -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Title of the page -->
     <title>Naomi Web Design | Rayal Park</title>
   </head>
+    <!-- Body section -->
   <body>
+      <!-- Header section -->
     <header class="header">
+      <!-- Navigation bar -->
       <nav>
+        <!-- Logo and navigation menu button -->
         <div class="nav__bar">
           <div class="logo">
             <a href="#"><img src="assets/logo.png" alt="logo" /></a>
@@ -21,6 +30,7 @@
             <i class="ri-menu-line"></i>
           </div>
         </div>
+            <!-- Navigation links -->
         <ul class="nav__links" id="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -28,16 +38,20 @@
           <li><a href="#explore">Explore</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <!-- Book now button -->
         <button class="btn nav__btn">Book Now</button>
       </nav>
+          <!-- Header container with hero image and text -->
       <div class="section__container header__container" id="home">
         <p>Simple - Unique - Friendly</p>
         <h1>Make Yourself At Home<br />In Our <span>Hotel</span>.</h1>
       </div>
     </header>
-
+    <!-- Section: Booking -->
     <section class="section__container booking__container">
+      <!-- Booking form -->
       <form action="/" class="booking__form">
+        <!-- Check-in input group -->
         <div class="input__group">
           <span><i class="ri-calendar-2-fill"></i></span>
           <div>
@@ -45,6 +59,7 @@
             <input type="text" placeholder="Check In" />
           </div>
         </div>
+        <!-- Check-out input group -->
         <div class="input__group">
           <span><i class="ri-calendar-2-fill"></i></span>
           <div>
@@ -52,6 +67,7 @@
             <input type="text" placeholder="Check Out" />
           </div>
         </div>
+        <!-- Guest input group -->
         <div class="input__group">
           <span><i class="ri-user-fill"></i></span>
           <div>
@@ -59,16 +75,20 @@
             <input type="text" placeholder="Guest" />
           </div>
         </div>
+        <!-- Check out button -->
         <div class="input__group input__btn">
-          <button class="btn">CHECH OUT</button>
+          <button class="btn">CHECK OUT</button>
         </div>
       </form>
     </section>
 
+    <!-- Section: About -->
     <section class="section__container about__container" id="about">
+      <!-- About image -->
       <div class="about__image">
         <img src="assets/about.jpg" alt="about" />
       </div>
+      <!-- About content -->
       <div class="about__content">
         <p class="section__subheader">ABOUT US</p>
         <h2 class="section__header">The Best Holidays Start Here!</h2>
@@ -83,7 +103,7 @@
         </div>
       </div>
     </section>
-
+<!-- Section: Room -->
     <section class="section__container room__container">
       <p class="section__subheader">OUR LIVING ROOM</p>
       <h2 class="section__header">The Most Memorable Rest Time Starts Here.</h2>
@@ -203,7 +223,7 @@
         </div>
       </div>
     </section>
-
+<!-- Footer of the landing page -->
     <footer class="footer" id="contact">
       <div class="section__container footer__container">
         <div class="footer__col">
@@ -253,7 +273,7 @@
         Copyright © 2024 Naomi Web Design. All rights reserved.
       </div>
     </footer>
-
+      <!-- adding javascript for responsiveness -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
   </body>
